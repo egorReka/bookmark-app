@@ -1,0 +1,45 @@
+:root {
+  --color-default-white: #ffffff;
+  --color-default-black: #000000;
+  --color-nero: #1c1c1c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  min-block-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-nero);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-default-white);
+}
+
+a {
+  color: var(--color-nero);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

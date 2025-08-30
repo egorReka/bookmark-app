@@ -1,11 +1,22 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="app">
+    <aside>
+      <nav>Меню</nav>
+    </aside>
+    <main>Контент</main>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app {
+  display: flex;
+  gap: 200px;
+  min-height: 100svh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 140px 120px;
+}
+
+</style>
