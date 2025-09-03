@@ -1,9 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CategoryList from './components/CategoryList.vue';
+import ProfileAvatar from './components/ProfileAvatar.vue';
+
+</script>
 
 <template>
   <div class="app">
-    <aside>
-      <nav>Меню</nav>
+    <aside class="left-panel">
+
+      <ProfileAvatar />
+
+      <nav>
+        <CategoryList />
+      </nav>
+
     </aside>
     <main>Контент</main>
   </div>
@@ -19,4 +29,9 @@
   padding: 140px 120px;
 }
 
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 </style>
