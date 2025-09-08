@@ -15,10 +15,10 @@ onMounted(() => {
 <template>
   <ul class="category__list">
     <li class="category__item" v-for="category in store.categories" :key="category.id">
-      <a class="category__link" :href="`/${category.alias}`">{{ category.name }}</a>
+      <RouterLink class="category__link" :to="`/main/${category.alias}`">{{ category.name }}</RouterLink>
     </li>
     <li class="category__item">
-      <ButtonIcon @click="() => store.createCategory({ name: 'Новая категория', alias: 'new' })">
+      <ButtonIcon @click="() => store.createCategory({ name: 'Новая категория' })">
         <IconPlus />
       </ButtonIcon>
     </li>
