@@ -24,8 +24,9 @@ import ProfileAvatar from '../components/ProfileAvatar.vue';
 
 <style scope>
 .app {
-  display: flex;
-  gap: 200px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10%;
   min-height: 100svh;
   max-width: 1440px;
   margin: 0 auto;
